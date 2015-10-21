@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.epicodus.alvinandthechipmunks.MainActivity" />
         </activity>
+        <activity
+            android:name=".DiscographyActivity"
+            android:label="@string/title_activity_discography"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.alvinandthechipmunks.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

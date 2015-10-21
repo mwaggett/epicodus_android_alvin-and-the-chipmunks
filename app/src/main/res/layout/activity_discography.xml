@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.epicodus.alvinandthechipmunks.DiscographyActivity"
+                android:background="#f2c001"
+                android:id="@+id/relativeLayout">
+
+    <TextView
+        android:text="Top 4 albums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/albumsLabel"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alvin and The Chipmunks"
+        android:id="@+id/movieSoundtrack"
+        android:layout_above="@+id/chipmunksInLowPlaces"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urban Chipmunks"
+        android:id="@+id/urbanChipmunks"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Chipmunk Christmas"
+        android:id="@+id/chipmunkChristmas"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/movieSoundtrack"
+        android:layout_alignStart="@+id/movieSoundtrack"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chipmunks In Low Places"
+        android:id="@+id/chipmunksInLowPlaces"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"/>
+
+
+</RelativeLayout>
