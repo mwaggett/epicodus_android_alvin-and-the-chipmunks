@@ -1,17 +1,18 @@
 package com.epicodus.alvinandthechipmunks;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Band {
+public class Band implements Serializable {
 
     private String mName;
-    private ArrayList<String> mMembers;
+    private ArrayList<Member> mMembers;
     private ArrayList<String> mAlbums;
 
-    public Band(String name, ArrayList<String> members, ArrayList<String> albums) {
+    public Band(String name) {
         mName = name;
-        mMembers = members;
-        mAlbums = albums;
+        mMembers = new ArrayList<Member>();
+        mAlbums = new ArrayList<String>();
     }
 
     public String getName() {
@@ -22,19 +23,19 @@ public class Band {
         mName = name;
     }
 
-    public ArrayList<String> getMembers() {
+    public ArrayList<Member> getMembers() {
         return mMembers;
     }
 
-    public void setMembers(ArrayList<String> members) {
-        mMembers = members;
+    public void addMember(Member member) {
+        mMembers.add(member);
     }
 
     public ArrayList<String> getAlbums() {
         return mAlbums;
     }
 
-    public void setAlbums(ArrayList<String> albums) {
-        mAlbums = albums;
+    public void addAlbum(String album) {
+        mAlbums.add(album);
     }
 }
